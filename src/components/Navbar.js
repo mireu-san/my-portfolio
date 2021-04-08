@@ -19,7 +19,7 @@ const Navbar = () => {
             aria-expanded="false" 
             aria-label="Toggle navigation"
             >
-                <FontAwesomeIcon icon={faBars} />
+                <FontAwesomeIcon icon={faBars} style={{ color: "#2ff1f2" }}/>
             </button>
 
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
