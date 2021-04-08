@@ -1,5 +1,8 @@
-import React from 'react';
+import React from "react";
 import logoMireu from "../components/logo.png";
+// React fontawesome imports
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
     return (
@@ -7,8 +10,17 @@ const Navbar = () => {
         <div className="container-fluid">
 
             <a className="navbar-brand mr-auto" href="#"><img className="logo" src={logoMireu} alt="logo mireu chronicle"/></a>
-            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button 
+            className="navbar-toggler" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navbarSupportedContent" 
+            aria-controls="navbarSupportedContent" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation"
+            >
             <span className="navbar-toggler-icon"></span>
+                <FontAwesomeIcon icon={faBars} />
             </button>
 
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
