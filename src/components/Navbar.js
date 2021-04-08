@@ -6,7 +6,7 @@ const Navbar = () => {
         <nav className="navbar navbar-expand-lg navbar-light bg-white">
         <div className="container-fluid">
 
-            <a className="navbar-brand mr-auto" href="#"><img src={logoMireu} alt="logo mireu chronicle"/></a>
+            <a className="navbar-brand mr-auto" href="#"><img className="logo" src={logoMireu} alt="logo mireu chronicle"/></a>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
             </button>

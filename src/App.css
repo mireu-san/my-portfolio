@@ -15,7 +15,7 @@ body {
 }
 
 img {
-  padding-top: 14px;
+  padding-top: 25px;
   padding-left: 20px;
 }
 
@@ -33,9 +33,9 @@ nav ul li {
 }
 
 .navbar-nav > li > a {
+  /*may add color for font but not necessary while bg color is white */
   margin-right: 0.75rem;
   margin-left: 0.75rem;
-  color: var(--primary-white) im !important;
 }
 
 .navbar-brand {
@@ -45,3 +45,4 @@ nav ul li {
 }
 
 /*===================== End of menu links =======================*/
+
