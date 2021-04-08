@@ -5,7 +5,9 @@ body {
 }
 
 :root {
-  color: var(--primary-white) im !important;
+  --primary-white: white;
+  --primary-orange: orange;
+  --primary-black: rgba(255,255,255,0);
 }
 
 /*===================== Navbar start =======================*/
@@ -36,12 +38,22 @@ nav ul li {
   /*may add color for font but not necessary while bg color is white */
   margin-right: 0.75rem;
   margin-left: 0.75rem;
+  border-top: 0.1875rem solid;
+  color: black;
 }
 
 .navbar-brand {
   max-width: 17.25rem;
   padding: 0 !important;
   height: 6rem !important;
+}
+
+.navbar-nav > li > a:focus {
+  border-top: 0.1875rem solid var(--primary-orange);
+}
+
+.navbar-nav > li > a:hover {
+  border-top: 0.1875rem solid var(--primary-orange);
 }
 
 /*===================== End of menu links =======================*/
