@@ -10,9 +10,14 @@ body {
   --primary-black: rgba(255,255,255,0);
   --primary-red: #ef4035;
   --primary-hover-red: #f33501;
+  --primary-sky: rgb(31,255,255);
 }
 
 /*===================== Navbar start =======================*/
+
+nav {
+  z-index: 2;
+}
 
 .logo {
   width: 16.25rem;
@@ -50,6 +55,12 @@ nav ul li {
   height: 6rem !important;
 }
 
+@media(max-width: 768px) {
+  .navbar-brand {
+    width: 7rem;
+  }
+}
+
 .navbar-nav > li > a:focus {
   border-top: 0.1875rem solid var(--primary-orange);
 }
@@ -81,12 +92,15 @@ nav ul li {
   align-items: center;
   text-align: center;
   font-family: "Jua", sans-serif;
+  z-index: 1;
 }
 
 .main-info h1 {
   color: var(--primary-orange);
   text-transform: uppercase;
 }
+
+
 /*===================== End of Header ==========================*/
 
 /*===================== TYPED TEXT start ==========================*/
@@ -95,11 +109,21 @@ nav ul li {
   font-size: 2rem;
 }
 
+@media(max-width: 768px) {
+  .main-info h1 {
+    font-size: 1.7rem !important;
+  }
+}
+
+.typed-text {
+  font-size: 1.3rem i !important;
+}
+
 /*===================== End of TYPED TEXT ==========================*/
 
 /*===================== HEADER MAIN OFFER BUTTON STARTS ==========================*/
 .btn-main-offer {
-  border: 1px solid var(--primary-red);
+  border: 1px solid var(--primary-sky);
   text-transform: uppercase;
   border-radius: 0;
   padding: 0.625rem 0.75rem 0.75rem 0.75rem;
@@ -107,4 +131,27 @@ nav ul li {
   margin: 2rem;
 }
 
+.btn-main-offer:hover {
+  text-decoration: none;
+  background-color: var(--primary-red);
+  color: var(--primary-white);
+  transition: .2s ease-in-out;
+}
+
 /*===================== End of HEADER MAIN  OFFER BUTTON ==========================*/
+
+/*============ PARTICLES JS starts  =================*/
+
+.tsparticles-canvas-el {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
+
+@media(max-width: 768px) {
+  .particles-canvas {
+  display: none;
+  }
+}
+/*============ ENd of PARTICLES JS  =================*/
