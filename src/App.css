@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
 
 body {
-  font-family: 'Jua', sans-serif;
+  font-family: "Jua", sans-serif;
 }
 
 :root {
   --primary-white: white;
   --primary-orange: orange;
   --primary-black: rgba(255,255,255,0);
+  --primary-red: #ef4035;
+  --primary-hover-red: #f33501;
 }
 
 /*===================== Navbar start =======================*/
@@ -58,3 +60,51 @@ nav ul li {
 
 /*===================== End of menu links =======================*/
 
+/*===================== Start - Header ==========================*/
+.header-wraper {
+  position: relative;
+  background: url() no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+
+.main-info {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Jua", sans-serif;
+}
+
+.main-info h1 {
+  color: var(--primary-orange);
+  text-transform: uppercase;
+}
+/*===================== End of Header ==========================*/
+
+/*===================== TYPED TEXT start ==========================*/
+
+.typed-text {
+  font-size: 2rem;
+}
+
+/*===================== End of TYPED TEXT ==========================*/
+
+/*===================== HEADER MAIN OFFER BUTTON STARTS ==========================*/
+.btn-main-offer {
+  border: 1px solid var(--primary-red);
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  color: var(--primary-white);
+  margin: 2rem;
+}
+
+/*===================== End of HEADER MAIN  OFFER BUTTON ==========================*/
