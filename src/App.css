@@ -103,7 +103,7 @@ nav ul li {
 
 /*===================== End of Header ==========================*/
 
-/*===================== TYPED TEXT start ==========================*/
+/*===================== TYPED TEXT (react-typed) start ==========================*/
 
 .typed-text {
   font-size: 2rem;
@@ -119,7 +119,7 @@ nav ul li {
   font-size: 1.3rem i !important;
 }
 
-/*===================== End of TYPED TEXT ==========================*/
+/*===================== End of TYPED TEXT (react-typed) ==========================*/
 
 /*===================== HEADER MAIN OFFER BUTTON STARTS ==========================*/
 .btn-main-offer {

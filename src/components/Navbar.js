@@ -3,6 +3,9 @@ import logoMireu from "../components/logo.png";
 // React fontawesome imports
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
+
+
 
 const Navbar = () => {
     return (
@@ -25,7 +28,7 @@ const Navbar = () => {
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav ml-auto">
                     <li className="nav-item">
-                        <a className="nav-link active" aria-current="page" href="#">About me</a>
+                        <a className="nav-link active" aria-current="page" href="../Routes/About">About me</a>
                     </li>
                     <li className="nav-item">
                         <a className="nav-link" href="#">Thoughts</a>
@@ -33,7 +36,6 @@ const Navbar = () => {
                     <li className="nav-item">
                         <a className="nav-link" href="#">Portfolio</a>
                     </li>
-                    
                     <li className="nav-item">
                         <a className="nav-link" href="#">Contacts</a>
                     </li>
