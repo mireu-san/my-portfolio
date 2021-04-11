@@ -3,46 +3,49 @@ import logoMireu from "../components/logo.png";
 // React fontawesome imports
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { NavLink } from "react-router-dom";
 
-const Navbar = () => {
+
+const Navbar = (props) => {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-white">
-        <div className="container-fluid">
+            <div className="container-fluid">
 
-            <a className="navbar-brand mr-auto" href="#"><img className="logo" src={logoMireu} alt="logo mireu chronicle"/></a>
-            <button 
-            className="navbar-toggler" 
-            type="button" 
-            data-bs-toggle="collapse" 
-            data-bs-target="#navbarSupportedContent" 
-            aria-controls="navbarSupportedContent" 
-            aria-expanded="false" 
-            aria-label="Toggle navigation"
-            >
-                <FontAwesomeIcon icon={faBars} style={{ color: "#2ff1f2" }}/>
-            </button>
+                <NavLink className="navbar-brand mr-auto" to="/home">
+                    <img className="logo" src={logoMireu} alt="logoMireuChronicle"/>
+                </NavLink>
 
-            <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul className="navbar-nav ml-auto">
-                    <li className="nav-item">
-                        <a className="nav-link active" aria-current="page" href="#">About me</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="#">Thoughts</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="#">Portfolio</a>
-                    </li>
-                    
-                    <li className="nav-item">
-                        <a className="nav-link" href="#">Contacts</a>
-                    </li>
+                <button 
+                    className="navbar-toggler" 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#navbarSupportedContent" 
+                    aria-controls="navbarSupportedContent" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation"
+                >
+                    <FontAwesomeIcon icon={faBars} style={{ color: "#2ff1f2" }}/>
+                </button>
 
-                </ul>
+                <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul className="navbar-nav ml-auto">
+                        <li className="nav-item">
+                            <NavLink className="nav-link active" to="/about">About me</NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink className="nav-link" to="/thoughts">Thoughts</NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink className="nav-link" to="/portfolio">Portfolio</NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink className="nav-link" to="/contacts">Contacts</NavLink>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            </nav>
-                )
-            }
+        </nav>
+    )
+};
 
 export default Navbar;
