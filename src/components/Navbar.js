@@ -11,9 +11,9 @@ const Navbar = (props) => {
         <nav className="navbar navbar-expand-lg navbar-light bg-white">
             <div className="container-fluid">
 
-                <Navlink className="navbar-brand mr-auto" to="/home">
+                <NavLink className="navbar-brand mr-auto" to="/home">
                     <img className="logo" src={logoMireu} alt="logoMireuChronicle"/>
-                </Navlink>
+                </NavLink>
 
                 <button 
                     className="navbar-toggler" 
