@@ -16,8 +16,6 @@ import Contacts from "./Contacts";
 function App() {
   return (
     <>
-
-    
       <Particles
         className="particles-canvas"
           params={{
@@ -47,8 +45,6 @@ function App() {
           <Route path="/contacts" component={Contacts} />
         </Switch>
       </div>
-
-
 
     </>
     
