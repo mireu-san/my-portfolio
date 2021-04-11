@@ -12,7 +12,7 @@ const Header = () => {
                     strings={["HTML, CSS, JS, React.js 를 가지고 반응형 디자인을 구현 합니다."]}
                     typeSpeed={80}
                 />
-                <a href="#" className="btn-main-offer">이 사람에 대해 좀 더 알아보기</a>
+                <a href="#" className="btn-main-offer">더 알아보기</a>
 
 
 
