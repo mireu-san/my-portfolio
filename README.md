@@ -26,3 +26,16 @@ Checklist: (부제: 개인 포트폴리오 페이지 맞음)
 - [] 내가 사용한 라이브러리나 프레임워크의 문제점이나 한계를 느끼고 개선해보았다
 - [] 코드나 제품의 퀄리티를 유지하기 위한 분석툴이나 테스트툴을 도입해보았다
 - [x] 타인과의 협업을 효율적으로 하기위한 고민을 해보았다
+
+수정 계획안:
+This page should be the blueprint like!
+
+1. main page - home -> localhost:3000/
+1.1 Router.js (from src/Components)
+
+2. sub menu -> (from src/Routes)
+
+2.1 (folder in Routes)aboutme -> About.js -> /about
+2.2 (folder in Routes)thoughts -> Thoughts.js -> /thoughts
+2.3 (folder in Routes)portfolio -> Portfolio.js -> /portfolio
+2.4 (folder in Routes)contacts -> Contacts.js -> /contacts

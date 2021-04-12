@@ -6,12 +6,13 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { NavLink } from "react-router-dom";
 
 
+
 const Navbar = (props) => {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-white">
             <div className="container-fluid">
 
-                <NavLink className="navbar-brand mr-auto" to="/home">
+                <NavLink className="navbar-brand mr-auto" to="/">
                     <img className="logo" src={logoMireu} alt="logoMireuChronicle"/>
                 </NavLink>
 
